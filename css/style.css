@@ -336,136 +336,23 @@ footer li{
 
 
 /* -- PARTIE RESPONSIVE */
-/* -- FORMAT GRAND ECRAN SUP A 1024PX -- */
-@media screen and (min-width:1025px){
-    body {
-        font-size: 30px;
-        width:1440px;
-    }
-    header{
-        height: 200px;
-    }
-    .titre img{
-        height:100px;
-    }
-    h2{
-        font-size: 32px;
-    }
-    .barre_recherche{
-        margin-bottom: 60px;
-    }
-    input, button{
-        padding: 20px 25px;
-        
-    }
-    .filtres{
-        justify-content: space-evenly;
-    }
+/* -- FORMAT GRAND ECRAN SUP A 992PX -- */
 
-    .filtres button{
-        padding: 0 30px 0 30px;
-        margin-bottom: 20px;
-    }
-    .filtres i{
-        padding:35px;
-        left:-27px
-    }
-    .filtre_familial i{
-        /* color:red; */
-        padding: 35px 38px;
-    }
-    span i{
-        padding: 15px 25px;
-    }
+/* -- FORMAT DESKTOP 992PX -- */
+@media screen and (max-width:992px){
     section.annonce{
-        width:90vw;
+        width:100vw;
         height: auto;
         justify-content: space-between;
         margin: 0 auto;
     }
-    article.hebergement{
-        height:100%;
-        
-    }
-    .liste_logement{
-        justify-content: center; 
-        height:100%;  
-        margin-bottom: 5px;
-    }
-    .card_hebergement{
-        margin: 10px 10px;
-        width: 300px;
-        height:220px;
-    }
-    .card_hebergement img{
-        height:120px; 
-    }
-    .card_title{
-        font-size: 20px;
-    }
-    .card_content, .card_content span{
-        font-size: 18px;
-    }
-    .note{
-        font-size: 14px;
+    
+    .gallerie article {
+        /* border:1px solid red; */
+        width:20vw;
     }
     #details{
-        display:block;
         width:100%;
-        margin: 20px 0;
-    }
-    aside.populaire{
-        padding-bottom:80px;
-        justify-content: space-evenly;
-    }
-    .card_image_populaire{
-        height:180px;
-    }
-    .activités{
-        align-items:center;
-        justify-items: center;
-    }
-    .gallerie{
-        height:700px;
-        width:90vw;
-        align-content:center;
-        justify-content: center;
-    }
-    .gallerie article{
-        width:285px;
-    }
-    .card_activité{
-        max-height:600px;
-    }
-    /* differentes hauteurs de photo */
-    .taille1, .taille4{
-        height:600px;
-    }
-    .taille2{
-        height:330px;
-    }
-    .taille3{
-        height:240px;
-    }
-    .taille5{
-        height:250px;
-    }
-    .taille6{
-        height:320px;
-    }
-    .card_activité h3{
-        height:100px;
-        font-size: 26px;
-    }
-    .card_activité img{
-        height:calc(100% - 100px);
-    }
-    footer{
-        width:1440px;
-    }
-    footer li{
-        font-size: 26px;
-        line-height:56px;
     }
 }
 
@@ -481,7 +368,7 @@ footer li{
     }
     aside.populaire{
         justify-content:center;
-        width:100%;
+        width:90%;
         border-radius: 15px;
         height:auto;
     }
