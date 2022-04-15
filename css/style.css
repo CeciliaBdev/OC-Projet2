@@ -120,14 +120,15 @@ section.annonce{
     display:flex;
     /* flex-wrap: wrap-reverse; */
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
     padding: 0 30px;
 }
 article.hebergement{
     width: 66%;
     background: #f2f2f2;
     border-radius: 15px;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    height:auto;
 }
 aside.populaire{
     width: 34%;
@@ -145,14 +146,13 @@ aside.populaire{
 .liste_logement{
     display: flex;
     justify-content: space-between;
-    /* margin: 15px 0; */
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px;
+    margin: 20px 0;
 }
 .card_hebergement{
-    
-    width: 100%;
-    max-width: 210px;
+    /* width: 180px; */
+    width: 18vw;
     background-color: #fff;
     border-radius: 15px;
     padding:5px;
@@ -213,6 +213,11 @@ aside.populaire{
 }
 .etoile_vide{
     color:#f2f2f2;
+}
+#details{
+    color:green;
+    display:block;
+    margin-top: 20px;
 }
 /* ******************************* */
 
@@ -341,17 +346,26 @@ footer li{
 
 
 /* -- PARTIE RESPONSIVE */
+@media screen and (min-width:1380px){
+    .container{
+        max-width: 1300px;
+    }
+    .card_hebergement{
+        width:240px;
+    }
+    
+}
+
 /* -- FORMAT GRAND ECRAN SUP A 992PX -- */
 @media screen and (max-width:1300px) and (min-width:993px){
-
     .gallerie article {
         width:20vw;
-        margin:0 auto;
+        margin: 0 auto;   
     }
 }
 
 /* -- FORMAT DESKTOP 992PX -- */
-@media screen and (max-width:992px){
+@media screen and (max-width:991px){
     section.annonce{
         width:100vw;
         height: auto;
@@ -361,11 +375,12 @@ footer li{
     .gallerie article {
         /* border:1px solid red; */
         width:20vw;
-        margin:0 auto;
+        /* margin:0 auto; */
     }
-    #details{
-        width:100%;
+    .card_hebergement{
+        width:25vw;
     }
+    
 }
 
 /* -- FORMAT TABLETTE MAX 768PX -- */
@@ -382,24 +397,24 @@ footer li{
         justify-content:center;
         width:100%;
         border-radius: 15px;
-        
         margin: 0 auto;
+        padding-bottom: 20px;
     }
     .card_populaire{
         width:80%;
-        margin: 0 auto 10px;
+        margin: 0 auto;
     }
     article.hebergement{
         width:100%;
         border-radius: 0px;
-        margin:0 auto;
-        background-color: #fff;
     }
-    #details{
-        width:100%;
-        font-size: 14px;
-        margin: 20px 0;
+    .liste_logement{
+        justify-content: center;
     }
+    .card_hebergement{
+        width:35vw;
+    }
+    
     h3{
         margin-left:30px;
         margin-bottom:20px;
@@ -409,9 +424,7 @@ footer li{
         
     }
     .gallerie{
-        flex-direction: column; 
-        width:100%;  
-        margin: 0 auto;     
+        flex-direction: column;     
     }
     .gallerie article{
         width:80vw;
@@ -421,6 +434,9 @@ footer li{
     .card_activité{
         max-height:140px;
         width:80vw;
+    }
+    footer{
+        padding-top: 20px;
     }
     footer h3{
         margin:0;
@@ -463,9 +479,6 @@ footer li{
     .menu a:hover{
         color:#0065FC;
     }
-    .container{
-        margin: 0 0;
-    }
     .recherche{
         margin: 0 10px;
     }
@@ -503,14 +516,14 @@ footer li{
         display:flex;
         flex-direction:column-reverse;
         /* les plus populaires en 1er */
-        width:100%;
+        padding:0;
     }
     aside.populaire{
-        width:100%;
+        /* width:100vw; */
         border-radius: 0px;
     }
     article.hebergement{
-        width:100%;
+        width:100vw;
         border-radius: 0px;
         margin:0;
         background-color: #fff;
@@ -523,18 +536,15 @@ footer li{
     }
     .card_hebergement,.card_populaire {
         width: 80vw;
+        margin:0 auto;
     }
-    #details{
-        width:100%;
-        font-size: 14px;
-        margin: 10px 0;
-    }
+    
     .gallerie{
         height:auto;
         width:100%;
+        
     }
     .gallerie article{
-        width:100vw;
         display:flex;
         justify-content: center;
     }
@@ -545,6 +555,7 @@ footer li{
     
     footer{
         display:block;
+        padding-top: 20px;
     }
     footer li{
         margin: 5px 0;
