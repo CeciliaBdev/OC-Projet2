@@ -9,8 +9,11 @@ body {
     font-family: Raleway, sans-serif; 
     font-size: 12px;
 }
-.pageprincipale{
-    margin: 0 30px;
+.container{
+    max-width: 1300px;
+    background-color: red;
+    margin: 0 auto;
+    
 }
 /* -- HEADER -- */
 header{
@@ -117,6 +120,8 @@ section.annonce{
     display:flex;
     /* flex-wrap: wrap-reverse; */
     justify-content: space-between;
+    gap: 30px;
+    padding: 0 30px;
 }
 article.hebergement{
     width: 66%;
@@ -125,13 +130,14 @@ article.hebergement{
     padding: 10px 30px;
 }
 aside.populaire{
-    width: 31%;
+    width: 34%;
     background: #f2f2f2;
     border-radius: 15px;
     padding: 10px 30px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
 }
 /* ******************************* */
 
@@ -141,10 +147,12 @@ aside.populaire{
     justify-content: space-between;
     /* margin: 15px 0; */
     flex-wrap: wrap;
+    gap: 30px;
 }
 .card_hebergement{
-    margin: 15px 0;
-    width: 180px;
+    
+    width: 100%;
+    max-width: 210px;
     background-color: #fff;
     border-radius: 15px;
     padding:5px;
@@ -249,30 +257,27 @@ aside.populaire{
 /* -- ACTIVITES A MARSEILLE -- */
 .activités{
     display:flex;
-    flex-direction: column;
 }
 .gallerie{
     /* border:1px solid black; */
+    margin: 0 30px;
     display:flex;
-    flex-flow: column wrap;
-    gap:25px;
+    flex-direction: row;
+    gap:30px;
     width: 100%;
-    height:400px;
-    justify-content:space-between;
-    /* align-items: center; */
 }
 .gallerie article {
     /* border:1px solid red; */
-    width:220px;
+    width:285px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .gallerie a{
     text-decoration: none;
     color:#000;
 }
 .card_activité{
-    display:flex;
-    flex-direction: column;
-    max-height:495px;
     background-color: white;
     width:100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -280,7 +285,7 @@ aside.populaire{
 }
 .card_activité h3{
     display:flex;
-    height:40px;
+    height:50px;
     align-items:center;
     /* pour enlever les marges du h3 */
     margin: 0 0 0 20px;
@@ -289,7 +294,7 @@ aside.populaire{
     object-fit: cover;
     width:100%;
     /* hauteur max - p */
-    height:calc(100% - 40px);
+    height:calc(100% - 50px);
     border-radius: 15px 15px 0 0;
 }
 /* differentes hauteurs de photo */
@@ -303,7 +308,7 @@ aside.populaire{
     height:140px;
 }
 .taille5{
-    height:160px;
+    height:170px;
 }
 .taille6{
     height:190px;
@@ -316,9 +321,9 @@ footer{
     background: #f2f2f2;
     display:flex;
     width:100%;
-    padding:30px;
     left: 0;
     bottom: 0;
+    padding: 0 30px;
     
 }
 footer ul{
@@ -337,6 +342,13 @@ footer li{
 
 /* -- PARTIE RESPONSIVE */
 /* -- FORMAT GRAND ECRAN SUP A 992PX -- */
+@media screen and (max-width:1300px) and (min-width:993px){
+
+    .gallerie article {
+        width:20vw;
+        margin:0 auto;
+    }
+}
 
 /* -- FORMAT DESKTOP 992PX -- */
 @media screen and (max-width:992px){
@@ -346,10 +358,10 @@ footer li{
         justify-content: space-between;
         margin: 0 auto;
     }
-    
     .gallerie article {
         /* border:1px solid red; */
         width:20vw;
+        margin:0 auto;
     }
     #details{
         width:100%;
@@ -368,19 +380,19 @@ footer li{
     }
     aside.populaire{
         justify-content:center;
-        width:90%;
+        width:100%;
         border-radius: 15px;
-        height:auto;
+        
+        margin: 0 auto;
     }
     .card_populaire{
-        
         width:80%;
         margin: 0 auto 10px;
     }
     article.hebergement{
         width:100%;
         border-radius: 0px;
-        margin:0;
+        margin:0 auto;
         background-color: #fff;
     }
     #details{
@@ -392,21 +404,23 @@ footer li{
         margin-left:30px;
         margin-bottom:20px;
     }
+    .activités{
+        display:flex;
+        
+    }
     .gallerie{
-        height:auto;
-        width:100%;
-        align-content:center;
-        justify-content: center;
+        flex-direction: column; 
+        width:100%;  
+        margin: 0 auto;     
     }
     .gallerie article{
-        width:100vw;
-        display:flex;
-        justify-content: center;
-        
+        width:80vw;
+        margin: 0 auto;
+        gap: 20px;
     }
     .card_activité{
         max-height:140px;
-        width:70vw;
+        width:80vw;
     }
     footer h3{
         margin:0;
@@ -449,7 +463,7 @@ footer li{
     .menu a:hover{
         color:#0065FC;
     }
-    .pageprincipale{
+    .container{
         margin: 0 0;
     }
     .recherche{
