@@ -11,7 +11,7 @@ body {
 }
 .container{
     max-width: 1300px;
-    background-color: red;
+    /* background-color: red; */
     margin: 0 auto;  
 }
 /* -- PARTIE HEADER -- */
@@ -307,19 +307,19 @@ h3#activités{
 }
 /* differentes hauteurs de photo */
 .taille1, .taille4{
-    height:400px;
+    height:320px;
 }
 .taille2{
-    height:230px;
+    height:150px;
 }
 .taille3{
     height:140px;
 }
 .taille5{
-    height:170px;
+    height:130px;
 }
 .taille6{
-    height:190px;
+    height:160px;
 }
 /* ******************************* */
 
@@ -436,7 +436,8 @@ footer li{
     }
     .card_activité{
         max-height:140px;
-        width:80vw;
+        width:70vw;
+        margin: 0 auto;
     }
     footer{
         padding-top: 20px;
@@ -567,5 +568,24 @@ footer li{
     footer ul{
         width:100%;
     }    
+}
+
+@media screen and (max-width:320px){
+    .menu{
+        margin:0;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .recherche{
+        margin:0;
+        padding: 0 15px;
+    }
+    aside.populaire{
+        padding: 0 15px;
+    }
+    .card_hebergement,.card_populaire{
+        width:90vw;
+    }
 }
 /* ******************************* */
