@@ -12,14 +12,13 @@ body {
 .container{
     max-width: 1300px;
     background-color: red;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
-/* -- HEADER -- */
+/* -- PARTIE HEADER -- */
 header{
-    align-items: center;
-    justify-content: space-between;
     display:flex;
+    justify-content: space-between;
+    align-items: center; 
     height:100px;
 }
 .titre img{
@@ -46,7 +45,10 @@ header a:hover{
     color:#0065FC;
 }
 
-/* -- BOUTON RECHERCHE */
+/* -- PARTIE RECHERCHE -- */
+.recherche{
+    padding: 0 30px;
+}
 h2{
     font-size: 14px;
     font-weight: bold;
@@ -78,12 +80,9 @@ button.map{
 .filtres {
     display: flex;
     flex-wrap: wrap;
-}
-.filtres, p {
-    margin-right: 20px;
+    gap:30px;
 }
 .filtres button{
-    margin-right: 20px;
     padding: 0 20px 0 10px;
     background: #fff;
     border-radius:999px;
@@ -102,7 +101,6 @@ button.map{
     margin: -2px;
 }
 .filtre_familial i{
-    /* color:red; */
     padding: 15px 17px;
 }
 span i{
@@ -122,6 +120,7 @@ section.annonce{
     justify-content: space-between;
     gap: 20px;
     padding: 0 30px;
+    margin: 20px 0;
 }
 article.hebergement{
     width: 66%;
@@ -215,9 +214,10 @@ aside.populaire{
     color:#f2f2f2;
 }
 #details{
-    color:green;
+    /* color:green; */
     display:block;
     margin-top: 20px;
+    font-weight: bold;
 }
 /* ******************************* */
 
@@ -260,6 +260,9 @@ aside.populaire{
 /* ******************************* */
 
 /* -- ACTIVITES A MARSEILLE -- */
+h3#activités{
+    padding: 0 30px;
+}
 .activités{
     display:flex;
 }
@@ -453,6 +456,7 @@ footer li{
     header{
         display:block;
         height:150px;
+        padding-top:30px;
     }
     nav ul{
         font-size: 20px;
