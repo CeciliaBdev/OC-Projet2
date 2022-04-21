@@ -419,8 +419,8 @@ footer li{
     }
     
     h3{
-        margin-left:30px;
-        margin-bottom:20px;
+        /* margin-left:30px; */
+        margin: 30px 0;
     }
     .activités{
         display:flex;
@@ -542,6 +542,9 @@ footer li{
     .card_hebergement,.card_populaire {
         width: 80vw;
         margin:0 auto;
+    }
+    #details{
+        margin-left:30px;
     }
     
     .gallerie{
