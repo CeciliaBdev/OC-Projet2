@@ -136,8 +136,8 @@ aside.populaire{
     padding: 10px 30px;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: space-around;
+    
 }
 /* ******************************* */
 
@@ -236,7 +236,7 @@ aside.populaire{
 }
 .card_image_populaire{
     width:50%;
-    height:120px;
+    height:100px;
 }
 .card_image_populaire img{
     object-fit: cover;
@@ -401,7 +401,8 @@ footer li{
         width:100%;
         border-radius: 15px;
         margin: 0 auto;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
+        gap:10px;
     }
     .card_populaire{
         width:80%;
@@ -585,7 +586,8 @@ footer li{
         padding: 0 15px;
     }
     aside.populaire{
-        padding: 0 15px;
+        padding: 0 15px 15px 15px;
+        
     }
     .card_hebergement,.card_populaire{
         width:90vw;
